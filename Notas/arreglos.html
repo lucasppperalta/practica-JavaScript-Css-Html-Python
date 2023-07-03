@@ -1,0 +1,31 @@
+<script>
+var miArreglo = [10, 20 , 30]
+
+console.log(miArreglo[1]) // accediendo al primer elemento del arreglo
+
+var suma = miArreglo[0] + miArreglo[1] + miArreglo[2]
+
+console.log(suma)
+
+miArreglo[0] = "hola"; // cambiando el valor del arreglo, los strings no se puede hacer, a los arreglos numericos se puede agregar otros datos
+
+miArreglo.push("soy un push"); 
+
+console.log(miArreglo)
+
+var array = [[1,2,3],[4,5,6],[7,8,9]]
+
+console.log(array[0][2])// acceso al numero 3
+// ================================================================================================================
+var estaciones = ['invierno', 'otoño', 'primavera', 'verano']
+var estacion;
+estaciones.pop(); // quitamos verano, si declaramos la variable estacion = estaciones.pop() añadría verano
+console.log(estaciones)
+estacion = estaciones.pop() //toma el valor primavera
+console.log(estacion) 
+//==================================================================================================================
+var meses = ['agosto', 'febrero', 'marzo', 'abril']
+meses.shift();// remueve el primer elemento
+meses.unshift("enero"); // agrega el valor al primer elemento
+console.log(meses)
+</script>

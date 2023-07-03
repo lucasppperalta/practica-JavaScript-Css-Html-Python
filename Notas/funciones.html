@@ -1,0 +1,35 @@
+<script>
+function mostrarMensaje(){
+    console.log('Hola, mundo')
+}
+mostrarMensaje()
+mostrarMensaje()
+
+//===============================ARGUMENTOS===================================
+
+function sumar(a,b){
+    var suma = a + b;
+    console.log("el resultado de "+ a + " + " + b +" es " + suma)
+}
+
+var x = 5;
+var y = 8;
+
+sumar(20,30)
+sumar(x,y) // los parametros a y b toman como argumento las variables x , y
+
+function concatenar(cadena1,cadena2,cadena3){
+    console.log(cadena1 + " " + cadena2 + " " + cadena3)
+}
+
+concatenar("Estoy", "aprendiendo", "JavaScript")
+
+function sumar(a,b){
+    return a + b; //retorna
+}
+
+var resultado = sumar(10,20)
+
+console.log(resultado)
+
+</script>
