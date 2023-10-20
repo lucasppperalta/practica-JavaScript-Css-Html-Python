@@ -1,0 +1,31 @@
+
+<script>
+function calcularPromedioNotas() {
+    let sumaNotas = 0;
+    let contadorNotas = 0;
+    let nota = 0;
+
+    while (nota !== -1) {
+        nota = parseFloat(prompt("Ingrese una nota. Si ingresa -1, se calculará el promedio."));
+        if (!isNaN(nota) && nota !== -1) {
+            sumaNotas += nota;
+            contadorNotas++;
+        }
+    }
+
+    if (contadorNotas === 0) {
+        console.log("No se ingresaron notas válidas.");
+        return null;
+    }
+
+    const promedio = sumaNotas / contadorNotas;
+    return promedio;
+}
+
+const promedioNotas = calcularPromedioNotas();
+
+if (promedioNotas !== null) {
+    console.log("El promedio de las notas es: " + promedioNotas.toFixed(2));
+}
+
+</script>

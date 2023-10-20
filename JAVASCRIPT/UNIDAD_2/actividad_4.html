@@ -1,12 +1,28 @@
 <script>
-var contador = 0;
-function curso(N){
-    while(contador < N){
-        document.write("Bienvenidos al curso Full Stack", contador + 1);
-        contador += 1;
+/* Crear una función que lea notas hasta que ingrese -1 y devuelve el
+promedio de las notas leídas.
+( aunque no se suele leer valores en una
+función)
+
+Una función que se llame siguiente, que reciba como
+parámetro un valor entero, y devuelva el siguiente del número
+ingresado como parámetro */
+
+
+
+function lectorNotas(){
+    var sumaNotas = 0;
+    var contador = 0;
+    var notas = parseFloat(prompt("Ingrese nota. Si ingresa -1 terminara el programa"));
+    while(notas !== -1 ){
+        var notas = parseFloat(prompt("Ingrese siguiente nota. Si ingresa -1 terminara el programa"))
+        contador ++;
+        sumaNotas += notas;
     }
+document.write(sumaNotas)
+//document.write("El promedio de notas es", suma / contador) 
 }
-curso(N = parseFloat(prompt("Ingrese un numero a iterar")));
+lectorNotas();
 
 
 </script>

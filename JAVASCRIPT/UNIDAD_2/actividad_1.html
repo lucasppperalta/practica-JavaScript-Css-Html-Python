@@ -1,23 +1,15 @@
 <script>
-
-
-
-/*Diseñar una función que tenga como parámetros dos números, y que
-calcule el máximo.*/
-
-var num1 = parseFloat(prompt("Ingrese el primer numero para calcular el mayor"));
-var num2 = parseFloat(prompt("Ingrese el segundo numero para calcular el mayor"));
-
-function CalcularMax(num1, num2){
-    if (num1 > num2){
-        document.write("El numero mayor es: ", num1)
-        } else{
-            document.write("Los numeros son iguales")
-        
+    /*Realizar una función, a la que se le pase como parámetro un número N,
+y muestre por consola N veces, el siguiente mensaje: “Bienvenidos al
+curso Full Stack”*/
+var contador = 0;
+function curso(N){
+    while(contador < N){
+        document.write("Bienvenidos al curso Full Stack", contador + 1);
+        contador += 1;
+    }
 }
-}
-CalcularMax(num1,num2)            
-
+curso(N = parseFloat(prompt("Ingrese un numero a iterar")));
 
 
 </script>

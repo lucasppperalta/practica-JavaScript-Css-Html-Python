@@ -1,18 +1,22 @@
 <script>
-/*Crear una función que se llame promedio3, que reciba como
-parámetro tres valores y devuelva el promedio de los mismos.
-*/
+
+
+
+/*Diseñar una función que tenga como parámetros dos números, y que
+calcule el máximo.*/
+
 var num1 = parseFloat(prompt("Ingrese el primer numero para calcular el mayor"));
 var num2 = parseFloat(prompt("Ingrese el segundo numero para calcular el mayor"));
-var num3 = parseFloat(prompt("Ingrese el segundo numero para calcular el mayor"));
 
-function promedio3(num1, num2,num3){
-    suma = num1 + num2 + num3;
-    promedio = suma / 3;
-    return(promedio);
+function CalcularMax(num1, num2){
+    if (num1 > num2){
+        document.write("El numero mayor es: ", num1)
+        } else{
+            document.write("Los numeros son iguales")
+        
 }
-
-document.write(promedio3(num1,num2,num3))
+}
+CalcularMax(num1,num2)            
 
 
 
