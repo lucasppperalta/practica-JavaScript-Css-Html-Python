@@ -1,0 +1,34 @@
+*{
+    text-align: center;
+}
+
+/*el asterisco es un selector universal afecta a toda la pagina*/
+h1 {
+    
+    background-color: rgb(13, 128, 13);
+    
+    font-style: italic;
+}
+/* modificamos el h1 solo nombrando la etiqueta*/
+
+p {
+    color:rgb(22, 41, 209);
+    font-size: 18px;
+}
+/* modificamos las etiquetas p solo nombrando la etiqueta*/
+
+.titulo{
+    color: yellow;
+}
+.borde {
+    border: solid;
+    border-radius: 2px;
+}
+/* modifico el titulo con una clase */
+/* para añadir dos o mas clases simplemente lo llamo en la etiqueta html haciendo un espacio */
+
+#especial{
+    color: skyblue;
+    font-size: 10px;
+}
+
